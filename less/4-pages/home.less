@@ -1,0 +1,60 @@
+@import "../../components/carousel/carousel.less";
+@import "../../components/cards/square-cards.less";
+
+.header-wrapper {
+    max-width: 100%;
+    background-color: @white;
+}
+
+.header-wrapper .header-home {
+    .max-desktop-width();
+    padding: 4.0rem 1.6rem 6.0rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .right-hero {
+        display: none;
+        max-height: 475px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            max-height: inherit;
+        }
+    }
+
+    .left-hero {
+        p {
+            margin: 2.4rem 0;
+        }
+
+        .stockexchange-img {
+            max-width: 500px;
+            margin: 0 auto;
+            width: 100%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media @desktop {
+        flex-direction: row;
+        align-items: center;
+
+        .left-hero {
+            padding-left: 5%;
+            width: 50%;
+            padding-right: 5%;
+        }
+
+        .right-hero {
+            width: 50%;
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+}

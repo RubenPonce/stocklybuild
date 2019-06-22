@@ -1,0 +1,95 @@
+@import '../../variables.scss';
+
+.stock-info-stock-chart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+// Stock Chart
+.rv-xy-plot {
+  align-self: flex-end;
+}
+
+.StockInfo {
+  width: 350px;
+  margin-right: 40px;
+
+  &__header {
+    // margin-bottom: 40px;
+    // max-width: 580px;
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.StockInfo__title {
+  margin-bottom: 5px;
+}
+
+.StockInfo__subtitle {
+  margin-top: 5px;
+  font-family: $body-font-family;
+  font-size: 12px;
+}
+
+.StockInfo__add-watchlist {
+  background: $white;
+  border: 1px solid #0d122b;
+  color: #0d122b;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px rgba(151, 162, 185, 0.2),
+    0px 3px 4px rgba(151, 162, 185, 0.12), 0px 2px 4px rgba(151, 162, 185, 0.14);
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 8px 14px;
+  margin-top: 40px;
+  cursor: pointer;
+  position: relative;
+
+  &:disabled {
+    background: #ccc;
+    color: darkgray;
+  }
+}
+
+.Stock-info__watchlist-error {
+  background: lightcoral;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+
+  // position: absolute;
+  // bottom: 5px;
+}
+
+.red {
+  color: red;
+  margin-left: 15px;
+}
+
+.green {
+  color: green;
+  margin-left: 15px;
+}
+
+.StockInfo__price-and-change {
+  display: flex;
+}
+
+.StockInfo__details {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}

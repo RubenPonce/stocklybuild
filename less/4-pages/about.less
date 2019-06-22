@@ -1,0 +1,31 @@
+@import "../../components/cards/vertical-cards.less";
+@import "../../components/cards/horizontal-cards.less";
+@import "../../components/cards/square-cards.less";
+
+
+.header-wrapper .header-about {
+    .max-desktop-width();
+    padding: 4.0rem 1.6rem 8.0rem 1.6rem;
+
+    h2, p {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 2.4rem;
+    }
+
+    p {
+        margin-bottom: 4.8rem;
+
+        @media @desktop {
+            margin-left: 4.8rem;
+            margin-right: 4.8rem;
+        }
+    }
+}
+
+.dark-section-wrapper {
+    width: 100%;
+    background-color: @secondary-color;
+}

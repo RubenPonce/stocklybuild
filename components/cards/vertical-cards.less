@@ -1,0 +1,62 @@
+#values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(../img/values/values-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .symbol-mark {
+        background: @primary-color;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 30px;
+        position: relative;
+        top: -50px;
+        left: 125px;
+
+        p.symbol {
+            padding-top: 0.6rem;
+            color: @white;
+            font-size: 2.4rem;
+        }
+    }
+
+    .card {
+        background-color: @white;
+        padding: 2.4rem;
+        margin: 2.4rem;
+        max-width: 300px;
+        -webkit-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.15);
+        box-shadow: 1px 2px 5px 1px rgba(0,0,0,0.15);
+        border-radius: 4px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .value-image {
+        margin: 0 auto;
+        margin-top: -30px;
+        max-width: 270px;
+
+        img {
+            max-width: 270px;
+        }
+    }
+
+    h4 {
+        text-align: center;
+        margin: 1.6rem 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+}

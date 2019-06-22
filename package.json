@@ -1,0 +1,17 @@
+{
+  "name": "stockly",
+  "version": "1.0.0",
+  "description": "A multi-page marketing website with PWA functionality",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8081"
+  },
+  "keywords": [
+    "pwa"
+  ],
+  "author": "Isaac Aderogba",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}

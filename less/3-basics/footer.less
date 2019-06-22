@@ -1,0 +1,120 @@
+.cta-wrapper {
+    width: 100%;
+    background-color: @faded-primary-color;
+}
+
+.cta-wrapper .cta-section {
+    .max-desktop-width();
+    padding: 4rem 1.6rem 1.6rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3, p {
+        margin-bottom: 2.4rem;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        display: inline-block;
+        line-height: 0;
+        margin: 0.8rem 0.8rem;
+        text-align: center;
+
+        span {
+            color: @white;
+        }
+    }
+
+    .log-in {
+        .log-in-button();
+    }
+
+    .sign-up {
+        .sign-up-button();
+    }
+
+    @media @desktop {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.footer-wrapper {
+    width: 100%;
+    background-color: @secondary-color;
+
+    p {
+        padding: 2rem 0;
+        text-align: center;
+        color: lightgrey;
+        font-size: 1rem;
+    }
+    a {
+        color: lightgrey;
+        font-size: 1rem;
+    }
+}
+
+.footer-wrapper footer {
+    .max-desktop-width();
+    padding: 4.0rem 1.6rem 0 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    h1 {
+        color: @white;
+        width: 100%;
+
+        span {
+            color: @primary-color;
+        }
+    }
+
+    .footer-links {
+        width: 40%;
+        margin: 1.6rem 5%;
+    }
+
+    ul li {
+        margin-bottom: 1.2rem;
+    }
+
+    ul li a {
+        color: @light-grey;
+        font-size: 1.2rem;
+
+        img {
+            margin-right: 0.8rem;
+            vertical-align: text-bottom;
+            max-width: 1.6rem;
+            max-height: 1.6rem;
+        }
+    }
+
+    h4 {
+        margin-bottom: 2.4rem;
+        color: @white;
+    }
+
+    @media @desktop {
+        align-items: baseline;
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+
+        h1 {
+            width: 20%;
+            margin: 0;
+        }
+
+        .footer-links {
+            text-align: center;
+            width: 20%;
+            margin: 0;
+        }
+    }
+}
