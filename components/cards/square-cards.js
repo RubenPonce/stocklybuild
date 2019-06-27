@@ -162,7 +162,7 @@ if (document.title == 'About') {
         },
         {
             imgSrc: 'img/team/chris-louie.png',
-            title: 'Chris Louise',
+            title: 'Chris Louie',
             subTitle: 'Data Scientist',
             linkText: 'Github',
             linkLocation: 'https://github.com/Ruwai',
