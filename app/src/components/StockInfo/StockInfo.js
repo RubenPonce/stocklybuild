@@ -93,9 +93,9 @@ class StockInfo extends Component {
   }
 
   addToWatchlist = () => {
-    if (this.props.watchList.length > 2) {
+    if (this.props.watchList.length > 20) {
       this.setState({
-        watchListError: 'Watchlist can only contain up to 3 stocks'
+        watchListError: 'Watchlist can only contain up to 21 stocks'
       });
     } else {
       this.props.addToWatchList(this.state.symbol);
